@@ -43,10 +43,10 @@ app.set('views',__dirname + '/views');
 app.use(express.static(__dirname +  "/public"));
 
 //Rutas Web
-app.use('/',require('./router/rutasWeb'))
+app.use('/',require('./router/rutasWeb'));
 
 //Rutas Mascotas
-app.use('/mascotas',require('./router/mascotas'))
+app.use('/mascotas',require('./router/mascotas'));
 
 
 
