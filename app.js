@@ -38,14 +38,15 @@ app.set('view engine', 'ejs');
 
 app.set('views',__dirname + '/views');
 
-//Conexion con la web estatica donde se encontrará el css y el js
+//Conexion con la web estatica donde se encontrará el css y el js. si se usa USE es un middelword
 
 app.use(express.static(__dirname +  "/public"));
 
-app.get('/', (req, res) =>{
+//Rutas Web
+app.use('/',require('./router/rutasWeb'))
 
-    res.render("index",{titulo: "mi titulo dinamico"});
-});
+//Rutas Mascotas
+app.use('/mascotas',require('./router/mascotas'))
 
 
 
