@@ -6,3 +6,5 @@ res.render("mascotas",{
     arrayMascotas
 })
 });
+
+module.exports=router;
