@@ -1,6 +1,28 @@
 <%- include("templates/header", {tituloCabecera: "EJS -Pagina Inicio"}) %>
 <body>
     <div>
-        Mascotas
+        <table>
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th> Nombre </th>
+                    <th> Descripción </th>
+                    <th> Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if (arrayMascotas.length) > 0 { %> 
+                    <% arrayMascotas.forEach(element => { %>
+                            <tr>
+                                <th> <%= element.id %> </th>
+                                <td> <%= element.nombre %> </td>
+                                <td> <%= element.descripcion %> </td>
+                            </tr>
+                    <% }); %>
+                <% } %>
+            </tbody>
+        </table>
+
+
     </div>
 <%- include("templates/footer.ejs") %>
