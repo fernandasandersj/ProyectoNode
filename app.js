@@ -9,6 +9,7 @@ frutas.forEach(item=>{
 
 });
 
+
 //SERVIDOR
 
 //const http=require('http');
@@ -31,6 +32,20 @@ const express = require('express')
 const app = express()
 
 const puerto = process.env.PORT || 3000;
+
+// CONEXION CON LA BBDD 
+
+const mongoose = require('mongoose');
+
+
+const user = '';
+const password = '';
+const uri = '';
+
+mongoose.connect('uri');
+
+.then(() => console.log('Base de datos conectada'));
+.catch(e => console.log(e));
 
 //Motor de plantillas con Express y EJS
 
