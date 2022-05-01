@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const mascotaSchema= new Schema({
-id: Number,
 nombre: String,
 descripcion: String,
 
@@ -10,7 +9,7 @@ descripcion: String,
 
 //Crear modelo
 
-const Mascota = mongoose.model('Mascota', mascotaSchema);
+const Mascota = mongoose.model('Mascota', mascotaSchema, 'Mascotas');
 
 
 module.exports = Mascota;

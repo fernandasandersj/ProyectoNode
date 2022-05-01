@@ -9,6 +9,8 @@ frutas.forEach(item=>{
 
 });
 
+console.log (dinero);
+
 
 //SERVIDOR
 
@@ -28,8 +30,8 @@ frutas.forEach(item=>{
 
 //SERVIDOR EXPRESS
 
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
 const puerto = process.env.PORT || 3000;
 
