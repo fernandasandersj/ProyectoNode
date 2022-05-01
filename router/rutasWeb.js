@@ -7,7 +7,8 @@ router.get('/', (req, res) =>{
 });
 
 router.get('/servicios', (req,res)=>{
-res.render("servicios", {tituloServicios: "Este es un mensaje dinámico"});
+
+    res.render("servicios", {tituloServicios: "Este es un mensaje dinámico"});
 
 });
 

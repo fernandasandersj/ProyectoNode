@@ -56,9 +56,6 @@ mongoose.connect(uri,
 
 
 //Motor de plantillas con Express y EJS
-
-
-
 app.set('view engine', 'ejs');
 
 app.set('views',__dirname + '/views');
