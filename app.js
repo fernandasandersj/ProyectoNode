@@ -73,7 +73,7 @@ app.use('/mascotas',require('./router/mascotas'));
 
 
 
-app.listen(puerto, ()=>{
+app.listen(puerto, () =>{
 
     console.log ('escuchando el servidor',puerto);
 
