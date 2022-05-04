@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/01_Fundamentos/', (req, res) =>{
+router.get('/01_Fundamentos/index', (req, res) =>{
 
     res.render("index",{titulo: "mi titulo dinamico"});
 });
