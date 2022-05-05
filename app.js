@@ -66,7 +66,7 @@ app.use(express.static(__dirname +  "/public"));
 
 //Rutas Web
 app.use('/', require('./router/rutasWeb'));
-app.use('/mascotas',require('./router/mascotas'));
+app.use('/Mascotas',require('./router/mascotas'));
 
 
 

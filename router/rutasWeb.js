@@ -6,7 +6,7 @@ router.get('/', (req, res) =>{
     res.render("index",{titulo: "mi titulo dinamico"});
 });
 
-router.get('/servicios', (req,res)=>{
+router.get('/Servicios', (req,res)=>{
 
     res.render("servicios", {tituloServicios: "Este es un mensaje dinámico"});
 
