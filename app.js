@@ -48,10 +48,10 @@ const uri = `mongodb+srv://${user}:${password}@cluster0.2tusd.mongodb.net/${dbNa
 
 mongoose.connect(uri, 
   {useNewUrlParser: true, useUnifiedTopology: true }
-  );
+  )
 
-//.then(() => console.log('base datos conectada'));
-//.catch(e => console.log(e));
+.then(() => console.log('base datos conectada'))
+.catch(e => console.log(e));
 
 
 
