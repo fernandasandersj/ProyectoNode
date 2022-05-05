@@ -14,7 +14,7 @@ router.get('/', async (req, res)=>{
         console.log(error);
     }
 
-res.render("mascotas",{
+res.render("Mascotas",{
     //Array que viene de la BBDD 
     arrayMascotas: [
         {id: '1', nombre: 'kitty', descripcion: 'perrita bb'},
