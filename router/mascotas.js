@@ -1,13 +1,13 @@
 const express = require ('express');
 const router = express.Router();
 
-const Mascota = require('../models/modeloMascota');
+const MascotaConst = require('../models/modeloMascota');
 
 router.get('/', async (req, res)=>{
 
     try{
 
-        const arrayMascotasDB = await Mascota.find();
+        const arrayMascotasDB = await MascotaConst.find();
 
         console.log(arrayMascotasDB)
     } catch(error){
