@@ -9,7 +9,7 @@ descripcion: String,
 
 //Crear modelo
 
-const Mascota = mongoose.model('Mascota', mascotaSchema, 'Mascotas');
+const MascotaConst = mongoose.model('MascotaConst', mascotaSchema, 'Mascotas');
 
 
-module.exports = Mascota;
+module.exports = MascotaConst;
